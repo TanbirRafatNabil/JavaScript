@@ -80,10 +80,10 @@ let discountedTotal = subtotal - discountAmount;
 
 if (discountedTotal >= 200) {
     shippingFee = 0.00;
-    console.log(` free shipping over $200)`);
+    console.log(`Shipping: FREE (Order qualifies for free shipping over $200)`);
 } else {
     shippingFee = 15.00;
-    console.log(`Shipping:  fee of $${shippingFee.toFixed(2)}`);
+    console.log(`Shipping: Standard flat fee of $${shippingFee.toFixed(2)}`);
 }
 
 let finalTotal = discountedTotal + shippingFee;
